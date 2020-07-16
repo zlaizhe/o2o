@@ -1,0 +1,54 @@
+2020-04-22 13:15:31.958 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:15:31.958 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:15:33.728 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2020-04-22 13:15:33.760 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), testpassword(String), 1(Long), 2020-04-22 13:15:33.431(Timestamp), null
+2020-04-22 13:15:33.775 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2020-04-22 13:15:49.676 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:15:49.676 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:15:51.269 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2020-04-22 13:15:51.292 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), testpassword(String)
+2020-04-22 13:15:51.313 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2020-04-22 13:16:04.373 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:16:04.374 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:16:05.985 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2020-04-22 13:16:06.016 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), testpassword(String)
+2020-04-22 13:16:06.034 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2020-04-22 13:16:36.536 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:16:36.545 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:16:38.190 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id =p.user_id WHERE l.user_id = ? 
+2020-04-22 13:16:38.217 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-22 13:16:38.242 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2020-04-22 13:17:07.030 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:17:07.031 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:17:08.876 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: UPDATE tb_local_auth SET password=?, last_edit_time=? WHERE user_id=? AND username=? AND password=? 
+2020-04-22 13:17:08.907 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: testpasswordnew(String), 2020-04-22 13:17:08.556(Timestamp), 1(Long), testusername(String), testpassword(String)
+2020-04-22 13:17:08.925 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2020-04-22 13:17:08.933 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id =p.user_id WHERE l.user_id = ? 
+2020-04-22 13:17:08.933 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-22 13:17:08.953 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2020-04-22 13:31:01.913 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:31:01.913 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:31:03.428 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id =p.user_id WHERE l.user_id = ? 
+2020-04-22 13:31:03.444 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-22 13:31:03.459 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2020-04-22 13:33:10.192 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:33:10.192 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:33:11.752 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id =p.user_id WHERE l.user_id = ? 
+2020-04-22 13:33:11.768 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-22 13:33:11.783 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 0
+2020-04-22 13:33:11.783 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==>  Preparing: INSERT INTO tb_local_auth(username,password,user_id,create_time,last_edit_time) VALUES (?,?,?,?,?) 
+2020-04-22 13:33:11.783 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - ==> Parameters: testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String), 1(Long), 2020-04-22 13:33:11.783(Timestamp), 2020-04-22 13:33:11.783(Timestamp)
+2020-04-22 13:33:11.799 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.insertLocalAuth - <==    Updates: 1
+2020-04-22 13:33:11.799 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id =p.user_id WHERE l.user_id = ? 
+2020-04-22 13:33:11.799 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - ==> Parameters: 1(Long)
+2020-04-22 13:33:11.799 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.queryLocalByUserId - <==      Total: 1
+2020-04-22 13:34:16.939 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:34:16.939 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:36:59.824 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [jdbc.properties]
+2020-04-22 13:36:59.824 [main] DEBUG c.i.o2o.util.EncryptPropertyPlaceholderConfigurer - Loading properties file from class path resource [redis.properties]
+2020-04-22 13:37:01.540 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==>  Preparing: UPDATE tb_local_auth SET password=?, last_edit_time=? WHERE user_id=? AND username=? AND password=? 
+2020-04-22 13:37:01.571 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - ==> Parameters: 6559sq606y6l92e9ss5qsqb5q92e566b(String), 2020-04-22 13:37:01.495(Timestamp), 1(Long), testusername(String), s06l5bl5s05602ly2syls6556q56sb6e(String)
+2020-04-22 13:37:01.571 [main] DEBUG com.imooc.o2o.dao.LocalAuthDao.updateLocalAuth - <==    Updates: 1
+2020-04-22 13:37:01.571 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gendar, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2020-04-22 13:37:01.571 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: testusername(String), 6559sq606y6l92e9ss5qsqb5q92e566b(String)
+2020-04-22 13:37:01.586 [main] DEBUG c.i.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1

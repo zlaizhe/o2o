@@ -10,7 +10,7 @@
     <url>http://maven.apache.org</url>
     <properties>
         <!--版本锁定-->
-        <spring.version>5.0.2.RELEASE</spring.version>
+        <spring.version>5.2.22.RELEASE</spring.version>
     </properties>
 
     <dependencies>
